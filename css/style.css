@@ -1,0 +1,110 @@
+body {
+  background-color: #FFE2C8;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #262423;
+}
+
+h1 {
+  font-family: "Monoton", cursive;
+  font-size: 40pt;
+  font-weight: 100;
+}
+
+nav {
+  width: 100vw;
+  background-color: white;
+  height: 120px;
+}
+
+nav ul li * {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+nav ul {
+  margin-left: 5%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 120px;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16pt;
+  color: #C19786;
+  border-top: 3px solid #C19786;
+  top: 40%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+nav ul li a:hover, .active {
+  border-bottom: 3px solid #C19786;
+  border-top: none;
+}
+
+#main {
+  box-sizing: border-box;
+  width: 75%;
+  margin: 2% auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-column-width: 250px;
+     -moz-column-width: 250px;
+          column-width: 250px;
+  -webkit-column-gap: 3.5em;
+     -moz-column-gap: 3.5em;
+          column-gap: 3.5em;
+  -webkit-column-rule: 5px dotted #FFE2C8;
+     -moz-column-rule: 5px dotted #FFE2C8;
+          column-rule: 5px dotted #FFE2C8;
+  padding: 2%;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 14pt;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  padding: 10px;
+}
+
+p {
+  margin-bottom: 0.5m;
+  padding: 10px;
+  text-align: justify;
+  line-height: 1.5;
+}
+p span {
+  text-decoration: underline;
+  color: #C19786;
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    display: block;
+    width: 100vw;
+  }
+
+  nav {
+    height: 180px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #main {
+    width: 90%;
+  }
+}
